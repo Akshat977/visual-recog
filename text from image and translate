@@ -1,0 +1,12 @@
+from IPython.display import display
+from PIL import Image
+img=Image.open('test03.png')
+display(img)
+pip install translate
+import pytesseract
+text=pytesseract.image_to_string(img)
+print(text)
+from translate import Translator
+translator= Translator(to_lang="eng", from_lang='ger')
+translation = translator.translate(text)
+print(translation)
