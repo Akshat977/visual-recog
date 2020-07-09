@@ -1,6 +1,6 @@
 from IPython.display import display
 from PIL import Image
-img=Image.open('test03.png')
+img=Image.open('test03.png').convert('1')
 display(img)
 pip install translate
 import pytesseract
